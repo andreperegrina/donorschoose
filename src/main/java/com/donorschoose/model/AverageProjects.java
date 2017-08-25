@@ -76,7 +76,7 @@ public class AverageProjects {
     @Override
     public String toString() {
         return "Average: " +
-                "\n  Percent found= " + calculatePercentFundedTotalAverage() +
+                "\n  Percent found= " + calculatePercentFundedTotalAverage() + "%"+
                 "\n  Number donors= " + calculateNumberDonorsTotalAverage() +
                 "\n  Cost to complete= " + calculateCostToCompleteTotalAverage() +
                 "\n  Number students= " + calculateNumberStudentsTotalAverage() +

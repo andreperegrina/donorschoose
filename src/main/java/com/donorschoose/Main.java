@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
 
         Args commands = new Args();
-        JCommander jCommander= JCommander.newBuilder()
+        JCommander jCommander = JCommander.newBuilder()
                 .addObject(commands)
                 .build();
         jCommander.parse(args);
@@ -21,14 +21,14 @@ public class Main {
             return;
         }
 
-        System.out.println(commands.keywords);
-
-//        DonorschooseLogic donorschooseLogic = new DonorschooseLogic();
-//        List<Project> projectList = donorschooseLogic.getProjects();
-//        for (Project project : projectList) {
-//            System.out.println(project + "\n\n");
-//        }
-//        AverageProjects averageTotals = DonorschooseLogic.getAverageTotals(projectList);
-//        System.out.println("\n"+averageTotals);
+        DonorschooseLogic donorschooseLogic = new DonorschooseLogic();
+        if (commands.keywords != null)
+            donorschooseLogic.setParameter("keywords", commands.keywords);
+        List<Project> projectList = donorschooseLogic.getProjects();
+        for (Project project : projectList) {
+            System.out.println(project + "\n\n");
+        }
+        AverageProjects averageTotals = DonorschooseLogic.getAverageTotals(projectList);
+        System.out.println("\n" + averageTotals);
     }
 }

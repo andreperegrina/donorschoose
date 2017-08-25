@@ -34,9 +34,9 @@ public class Project {
     @Override
     public String toString() {
         return "Project: \n" +
-                "\n  Title: '" + title +
-                "\n  Short Description: '" + shortDescription +
-                "\n  Proposal URL: '" + proposalURL +
+                "\n  Title: " + title +
+                "\n  Short Description: " + shortDescription +
+                "\n  Proposal URL: " + proposalURL +
                 "\n  Cost To Complete: " + costToComplete;
     }
 }
