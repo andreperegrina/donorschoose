@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/andreperegrina/donorschoose.svg?branch=master)](https://travis-ci.org/andreperegrina/donorschoose)
 
-#DonorsChoose Java command-line app
+# DonorsChoose Java command-line app
 
 This application queries the information of the DonorsChoose organization through its api.
 
