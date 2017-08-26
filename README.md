@@ -47,7 +47,7 @@ command.
 
 ``java -jar donorschoose-1.0.jar -Dmax=5``
 
-Warning: you need to use the -D command in capital letter.
+**Warning:** you need to use the -D command in capital letter.
 
 To see more information or the complete list of parameters that you can use please visit:
 [https://data.donorschoose.org/docs/project-listing/json-requests/](https://data.donorschoose.org/docs/project-listing/json-requests/)
