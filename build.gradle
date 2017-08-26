@@ -2,12 +2,39 @@ group 'com.donorschoose.exercise'
 version '0.2-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'application'
+
+jar {
+    manifest {
+        attributes (
+                'Main-Class': 'com.donorschoose.Main'
+        )
+    }
+}
+
+//create a single Jar with all dependencies
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'DonorsChoose command-line app',
+                'Implementation-Version': version,
+                'Main-Class': 'com.donorschoose.Main'
+    }
+    baseName = project.name
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+
+mainClassName = 'com.donorschoose.Main'
 
 sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
+
+
+
 
 dependencies {
 //    Develop libraries

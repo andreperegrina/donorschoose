@@ -67,6 +67,7 @@ public class DonorschooseLogic {
                         }
                     }
 
+//                    Validate the criteria in with the API information
                     switch (queryCondition) {
                         case "state":
                             assert queryValue.equals("CA");
