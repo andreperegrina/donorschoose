@@ -1,5 +1,5 @@
 group 'com.donorschoose.exercise'
-version '0.8-SNAPSHOT'
+version '0.9-SNAPSHOT'
 
 apply plugin: 'java'
 apply plugin: 'application'
