@@ -42,7 +42,7 @@ To see more information or the complete list of fields updated please visit:
 
 ### Custom parameters
 
-If you want to pass custom parameters to the application you need to use the `-dNAME_PARAMETER`
+If you want to pass custom parameters to the application you need to use the `-DNAME_PARAMETER`
 command.
 
 ``java -jar donorschoose-1.0.jar -Dmax=5``
