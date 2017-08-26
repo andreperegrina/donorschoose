@@ -9,7 +9,7 @@ This application queries the information of the DonorsChoose organization throug
 
 To use the command-line application you just need to used like this
 
-````
+``./gradlew``
 
 
 With the command `--help` you can have a manual of the commands availables
