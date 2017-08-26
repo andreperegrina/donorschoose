@@ -1,5 +1,7 @@
 language: java
 jdk: oraclejdk8
+script:
+  - gradle fatjar
 deploy:
     provider: releases
     api_key: $GITHUB_OAUTH
