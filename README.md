@@ -9,7 +9,7 @@ This application queries the information of the DonorsChoose organization throug
 
 To use the command-line application you just need to used like this
 
-``java -jar donorschoose-0.X-SNAPSHOT.jar``
+``java -jar donorschoose-1.0.jar``
 
 this command will execute the default values in the app.
 
@@ -17,7 +17,7 @@ this command will execute the default values in the app.
 
 You can use the `-keywords` to search for phrase
 
-``java -jar donorschoose-0.X-SNAPSHOT.jar -keywords="Canoga Park"``
+``java -jar donorschoose-1.0.jar -keywords="Canoga Park"``
 
 The result will based in the following fields:
 
@@ -45,14 +45,14 @@ To see more information or the complete list of fields updated please visit:
 If you want to pass custom parameters to the application you need to use the `-dNAME_PARAMETER`
 command.
 
-``java -jar donorschoose-0.X-SNAPSHOT.jar -Dmax=5``
+``java -jar donorschoose-1.0.jar -Dmax=5``
 
 To see more information or the complete list of parameters that you can use please visit:
 [https://data.donorschoose.org/docs/project-listing/json-requests/](https://data.donorschoose.org/docs/project-listing/json-requests/)
 
 ### Help
 
-With the command `java -jar donorschoose-0.X-SNAPSHOT.jar --help` you can have a manual of the commands availables
+With the command `java -jar donorschoose-1.0.jar --help` you can have a manual of the commands availables
 
 ```
 Options: 
