@@ -5,6 +5,7 @@ script:
 deploy:
     provider: releases
     api_key: $GITHUB_OAUTH
+    file_glob: true
     file: "build/libs/donorschoose-*.jar"
     zip_file: 'build/libs/donorschoose-*.jar'
     skip_cleanup: true
