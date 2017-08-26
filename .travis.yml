@@ -2,6 +2,7 @@ language: java
 jdk: oraclejdk8
 deploy:
     provider: releases
+    api_key: $GITHUB_OAUTH
     file: "donorschoose-*.jar"
     skip_cleanup: true
     on:
